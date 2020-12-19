@@ -1,0 +1,9 @@
+.default {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: auto;
+  padding: 0px 10px;
+  max-width: 580px;
+  min-height: 100vh;
+}
