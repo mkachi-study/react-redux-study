@@ -1,0 +1,24 @@
+.default {
+  color: #000000;
+  font-size: 1.5em;
+  width: 45px;
+  height: 45px;
+  background-color: #ffffff !important;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.default > * {
+  margin: auto;
+  display: flex;
+}
+
+.toggle {
+  transform: rotateZ(45deg);
+}
+
+.default:hover,
+.toggle {
+  color: #ffffff;
+  background-color: #242424 !important;
+}
