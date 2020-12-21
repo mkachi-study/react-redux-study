@@ -1,0 +1,24 @@
+.default {
+  display: flex;
+  background-color: #1e1c24;
+  border: 2px solid #232323;
+  border-radius: 15px;
+  padding: 5px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.default:hover {
+  background-color: #24222b;
+}
+
+.subject {
+  color: #ffffff;
+  font-size: 1.2em;
+  display: flex;
+  margin: auto auto auto 3px;
+}
+
+.subject-check {
+  color: #888888;
+  text-decoration: line-through;
+}
