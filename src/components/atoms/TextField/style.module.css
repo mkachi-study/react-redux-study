@@ -35,5 +35,10 @@
   color:#ff2516;
   margin-top: 3px;
   font-size: 0.8em;
+  visibility: hidden;
   display: flex;
+}
+
+.error-text-show {
+  visibility: visible;
 }
