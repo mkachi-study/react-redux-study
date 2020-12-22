@@ -11,7 +11,6 @@ interface IProps {
 }
 
 const CheckBox: React.FC<IProps> = ({ className, checked, onChange = () => { } }) => {
-  console.log('render')
   const classProps = classNames(className, styles['default'])
   return <span className={classProps}>
     <span className={styles['box']}>
