@@ -1,0 +1,11 @@
+.default {
+  padding: 10px;
+}
+
+.default > * {
+  margin-bottom: 10px;
+}
+
+.default > *:last-child {
+  margin-bottom: 0px;
+}
