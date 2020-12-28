@@ -12,11 +12,13 @@ interface IProps {
   onClick?(): void
 }
 
-const AddButton: React.FC<IProps> = ({ className, toggle = false, onClick = () => { } }) => {
+const AddButton: React.FC<IProps> = ({ className, toggle = false, onClick = () => {} }) => {
   const classProps = classNames(className, styles['default'], toggle ? styles['toggle'] : '')
-  return <Button className={classProps} variant={'none'} onClick={onClick}>
-    <FaPlus/>
-  </Button>
+  return (
+    <Button className={classProps} variant={'none'} onClick={onClick}>
+      <FaPlus />
+    </Button>
+  )
 }
 
 export default AddButton

@@ -9,12 +9,13 @@ interface IProps {
   onClick?(event: React.FormEvent<HTMLButtonElement>): void
 }
 
-
-const Button: React.FC<IProps> = ({ className, variant = 'text', children, onClick = () => { } }) => {
+const Button: React.FC<IProps> = ({ className, variant = 'text', children, onClick = () => {} }) => {
   const classProps = classNames(className, styles['default'], styles[variant])
-  return <button className={classProps} onClick={onClick}>
-    {children}
-  </button>
+  return (
+    <button className={classProps} onClick={onClick}>
+      {children}
+    </button>
+  )
 }
 
 export default Button

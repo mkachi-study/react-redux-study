@@ -10,14 +10,14 @@ interface IProps {
   onChange?(event: React.FormEvent<HTMLInputElement>): void
 }
 
-const CheckBox: React.FC<IProps> = ({ className, checked, onChange = () => { } }) => {
+const CheckBox: React.FC<IProps> = ({ className, checked, onChange = () => {} }) => {
   const classProps = classNames(className, styles['default'])
-  return <span className={classProps}>
-    <span className={styles['box']}>
-      {checked && <FaCheck className={styles['icon']} />}
+  return (
+    <span className={classProps}>
+      <span className={styles['box']}>{checked && <FaCheck className={styles['icon']} />}</span>
+      <input className={styles['input']} type={'checkbox'} checked={checked} onChange={onChange} />
     </span>
-    <input className={styles['input']} type={'checkbox'} checked={checked} onChange={onChange} />
-  </span>
+  )
 }
 
 export default CheckBox

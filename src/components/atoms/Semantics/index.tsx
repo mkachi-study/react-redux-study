@@ -1,20 +1,6 @@
 import React from 'react'
 
-export type TagType =
-  | 'div'
-  | 'article'
-  | 'aside'
-  | 'details'
-  | 'figcaption'
-  | 'figure'
-  | 'footer'
-  | 'header'
-  | 'main'
-  | 'mark'
-  | 'nav'
-  | 'section'
-  | 'summary'
-  | 'time'
+export type TagType = 'div' | 'article' | 'aside' | 'details' | 'figcaption' | 'figure' | 'footer' | 'header' | 'main' | 'mark' | 'nav' | 'section' | 'summary' | 'time'
 
 interface IProps {
   className?: string

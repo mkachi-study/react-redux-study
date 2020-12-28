@@ -15,16 +15,7 @@ interface IProps {
   overflow?: 'auto' | 'hidden'
 }
 
-const Flex: React.FC<IProps> = ({
-  className,
-  element = 'div',
-  children,
-  direction = 'row',
-  align,
-  justify,
-  wrap = 'no-wrap',
-  overflow,
-}) => {
+const Flex: React.FC<IProps> = ({ className, element = 'div', children, direction = 'row', align, justify, wrap = 'no-wrap', overflow }) => {
   const classProps = classNames(
     className,
     styles['default'],

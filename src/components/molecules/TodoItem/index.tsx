@@ -17,19 +17,19 @@ interface IProps {
   onRemove?(): void
 }
 
-const TodoItem: React.FC<IProps> = ({ className, subject, checked = false, onChange = () => { }, onRemove = () => { } }) => {
+const TodoItem: React.FC<IProps> = ({ className, subject, checked = false, onChange = () => {}, onRemove = () => {} }) => {
   const classProps = classNames(className, styles['default'])
   const subjectProps = classNames(styles['subject'], checked ? styles['subject-check'] : '')
 
-  return <Flex element={'section'} className={classProps}>
-    <CheckBox checked={checked} onChange={onChange}/>
-    <span className={subjectProps}>
-      {subject}
-    </span>
-    <Button variant={'icon'} onClick={onRemove}>
-      <MdClose/>
-    </Button>
-  </Flex>
+  return (
+    <Flex element={'section'} className={classProps}>
+      <CheckBox checked={checked} onChange={onChange} />
+      <span className={subjectProps}>{subject}</span>
+      <Button variant={'icon'} onClick={onRemove}>
+        <MdClose />
+      </Button>
+    </Flex>
+  )
 }
 
 export default TodoItem
