@@ -7,7 +7,7 @@ import { FaCheck } from 'react-icons/fa'
 interface IProps {
   className?: string
   checked: boolean
-  onChange?(event: React.FormEvent<HTMLInputElement>): void
+  onChange?(event: React.SyntheticEvent<HTMLInputElement>): void
 }
 
 const CheckBox: React.FC<IProps> = ({ className, checked, onChange = () => {} }) => {

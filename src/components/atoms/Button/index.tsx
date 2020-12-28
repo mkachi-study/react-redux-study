@@ -6,7 +6,7 @@ interface IProps {
   className?: string
   variant?: 'text' | 'icon' | 'none'
   children?: React.ReactNode
-  onClick?(event: React.FormEvent<HTMLButtonElement>): void
+  onClick?(event: React.SyntheticEvent<HTMLButtonElement>): void
 }
 
 const Button: React.FC<IProps> = ({ className, variant = 'text', children, onClick = () => {} }) => {

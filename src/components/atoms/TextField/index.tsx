@@ -9,7 +9,7 @@ interface IProps {
   placeholder?: string
   value?: string
   type?: 'text' | 'password'
-  onChange?(event: React.FormEvent<HTMLInputElement>)
+  onChange?(event: React.SyntheticEvent<HTMLInputElement>)
 }
 
 const TextField: React.FC<IProps> = ({ className, error = false, errorText = '', placeholder = '', value = '', type = 'text', onChange = () => {} }) => {
