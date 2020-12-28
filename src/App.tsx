@@ -8,9 +8,11 @@ import './index.css'
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <Switch>{router()}</Switch>
-    </Router>
+    <React.StrictMode>
+      <Router>
+        <Switch>{router()}</Switch>
+      </Router>
+    </React.StrictMode>
   )
 }
 
