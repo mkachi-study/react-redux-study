@@ -9,7 +9,12 @@ interface IProps {
 }
 
 const Semantics: React.FC<IProps> = ({ className, element = 'div', children, ...props }) => {
-  return React.createElement(element, { className: className, ...props }, children)
+  const Element = element
+  return (
+    <Element className={className} {...props}>
+      {children}
+    </Element>
+  )
 }
 
 export default Semantics
