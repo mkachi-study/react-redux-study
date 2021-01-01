@@ -7,15 +7,14 @@ interface IProps {
   className?: string
   elementId?: string
   children?: React.ReactNode
-  onBackClick?(event: React.SyntheticEvent<HTMLDivElement>): void
 }
 
-const Modal: React.FC<IProps> = ({ className, elementId = 'modal', onBackClick = () => {}, children }) => {
+const Modal: React.FC<IProps> = ({ className, elementId = 'modal', children }) => {
   const classProps = classNames(className, styles['default'])
   const target = document.getElementById(elementId)
 
   return ReactDOM.createPortal(
-    <div className={styles['background']} onClick={onBackClick}>
+    <div className={styles['background']}>
       <div className={classProps}>{children}</div>
     </div>,
     target
