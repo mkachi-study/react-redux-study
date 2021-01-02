@@ -12,7 +12,7 @@ interface IProps {
   align?: 'start' | 'center' | 'end' | 'stretch'
   justify?: 'left' | 'center' | 'right' | 'space-around' | 'space-between'
   wrap?: 'wrap' | 'no-wrap' | 'wrap-reverse'
-  overflow?: 'auto' | 'hidden'
+  overflow?: 'auto' | 'hidden' | 'scroll'
 }
 
 const Flex: React.FC<IProps> = ({ className, element = 'div', children, direction = 'row', align, justify, wrap = 'no-wrap', overflow }) => {
