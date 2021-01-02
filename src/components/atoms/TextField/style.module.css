@@ -18,6 +18,8 @@
 }
 
 .input {
+  width: 100%;
+  display: flex;
   border: 0;
   padding: 10px 0px;
   background-color: transparent;
