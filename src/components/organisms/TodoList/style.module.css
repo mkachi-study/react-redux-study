@@ -1,5 +1,11 @@
 .default {
-  padding: 10px;
+  flex-grow: 1;
+  scrollbar-width: none;
+  margin: 10px 0px;
+}
+
+.default::-webkit-scrollbar {
+  display: none;
 }
 
 .default > * {
