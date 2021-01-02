@@ -20,7 +20,7 @@ const ItemInput: React.FC<IProps> = ({ className, subject, onChange = () => {}, 
 
   return (
     <Flex className={classProps} direction={'row'}>
-      <TextField type={'text'} error={subject === ''} errorText={'할 일을 입력해주세요'} value={subject} onChange={onChange} />
+      <TextField className={styles['input']} type={'text'} error={subject === ''} errorText={'할 일을 입력해주세요'} value={subject} onChange={onChange} />
       <Button className={styles['add-button']} variant={'icon'} onClick={onAppend}>
         <FaPlus />
       </Button>
