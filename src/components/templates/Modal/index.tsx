@@ -5,19 +5,18 @@ import styles from './style.module.css'
 
 interface IProps {
   className?: string
-  elementId?: string
+  element?: HTMLElement
   children?: React.ReactNode
 }
 
-const Modal: React.FC<IProps> = ({ className, elementId = 'modal', children }) => {
+const Modal: React.FC<IProps> = ({ className, element = document.getElementById('modal'), children }) => {
   const classProps = classNames(className, styles['default'])
-  const target = document.getElementById(elementId)
 
   return ReactDOM.createPortal(
     <div className={styles['background']}>
       <div className={classProps}>{children}</div>
     </div>,
-    target
+    element
   )
 }
 
