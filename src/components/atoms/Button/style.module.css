@@ -34,6 +34,6 @@
 }
 
 .icon > * {
-  display: flex;
+  display: block;
   margin: auto;
 }
