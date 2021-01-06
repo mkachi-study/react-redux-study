@@ -1,7 +1,0 @@
-.default {
-  display: flex;
-  flex-direction: column;
-  margin: 0px auto;
-  padding: 0px 10px;
-  max-width: 580px;
-}
