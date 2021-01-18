@@ -6,7 +6,7 @@ import createSaga from 'redux-saga'
 import reducers, { rootSaga } from './reducers'
 
 const sagaMiddleware = createSaga()
-const store = createStore(null, applyMiddleware(sagaMiddleware))
+const store = createStore(reducers, applyMiddleware(sagaMiddleware))
 sagaMiddleware.run(rootSaga)
 
 export type StoreState = ReturnType<typeof reducers>
