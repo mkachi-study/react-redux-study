@@ -1,10 +1,13 @@
 import { combineReducers } from 'redux'
 import { all } from 'redux-saga/effects'
 
-const reducers = combineReducers({})
+import todoList from './TodoList'
+import todoListSaga from './TodoList/saga'
+
+const reducers = combineReducers({ todoList })
 
 export function* rootSaga() {
-  yield all([])
+  yield all([todoListSaga()])
 }
 
 export default reducers
