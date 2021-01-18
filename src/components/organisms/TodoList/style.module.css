@@ -1,0 +1,18 @@
+.default {
+  flex-grow: 1;
+  scrollbar-width: none;
+  margin: 10px 0px;
+  padding-bottom: 70px;
+}
+
+.default::-webkit-scrollbar {
+  display: none;
+}
+
+.default > * {
+  margin-bottom: 10px;
+}
+
+.default > *:last-child {
+  margin-bottom: 0px;
+}

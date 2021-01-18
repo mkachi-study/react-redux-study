@@ -1,0 +1,41 @@
+.default {
+  padding: 7px;
+  display: inline-flex;
+  border-radius: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.default:hover {
+  background-color: #ffffff2d;
+}
+
+.default:active {
+  background-color: #ffffff62;
+}
+
+.box {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: #d9d9d9;
+}
+
+.input {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1em;
+  margin: auto;
+  display: flex;
+}

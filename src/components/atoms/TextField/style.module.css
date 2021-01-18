@@ -1,0 +1,46 @@
+.default {
+  flex-direction: column;
+  display: inline-flex;
+}
+
+.line-normal {
+  border-bottom: 1px solid #979797;
+  display: flex;
+  transition: border 0.3s ease;
+}
+
+.line-focus {
+  border-bottom: 1px solid #ffffff;
+}
+
+.line-error {
+  border-bottom: 1px solid #ff2516;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  border: 0;
+  padding: 10px 0px;
+  background-color: transparent;
+}
+
+.input-normal {
+  color: #e7e7e7;
+}
+
+.input-error {
+  color: #ff2516;
+}
+
+.error-text {
+  color:#ff2516;
+  margin-top: 3px;
+  font-size: 0.8em;
+  visibility: hidden;
+  display: flex;
+}
+
+.error-text-show {
+  visibility: visible;
+}

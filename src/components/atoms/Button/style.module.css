@@ -1,0 +1,39 @@
+.default {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.text {
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 0.5em;
+  transition: background-color 0.3s ease;
+}
+
+.text:hover {
+  background-color: #ffffff3f;
+}
+
+.text:active {
+  background-color: #ffffffa4;
+}
+
+.icon {
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 0.5em;
+  transition: background-color 0.3s ease;
+}
+
+.icon:hover {
+  background-color: #ffffff3f;
+}
+
+.icon:active {
+  background-color: #ffffffa4;
+}
+
+.icon > * {
+  display: block;
+  margin: auto;
+}

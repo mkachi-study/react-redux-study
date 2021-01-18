@@ -1,0 +1,16 @@
+.default {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+}
+
+.add-button {
+  margin-bottom: 19px;
+}
+
+.add-button > * {
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,26 @@
+.default {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 15px 15px 0px 0px;
+  padding: 10px;
+}
+
+.input {
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.button {
+  margin: 10px auto 0px auto;
+}
+
+.popup {
+  background-color: #1e1c24;
+  border-color: #232323;
+}
